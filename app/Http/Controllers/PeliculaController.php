@@ -7,7 +7,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Pelicula;
 use Illuminate\Http\Request;
-
+use Illuminate\Routing\Route;
 
 // aqui controlaremos las vistas
 class PeliculaController extends Controller
@@ -18,7 +18,14 @@ class PeliculaController extends Controller
         return view("pelicula",compact("pelicula"));
     }
     public function peliculas($id){
-        $peliculas = Pelicula::getTodoPeliculas($id);
-        return view("peliculas",compact("peliculas"));
+        if($id == 1 or $id == 2){
+            $peliculas = Pelicula::getTodoPeliculas($id);
+            return view("peliculas",compact("peliculas"));
+        }
+        else{
+            //redireccionar
+            return redirect()->to("/peliculas/2");
+        }
+        
     }
 }

@@ -11,11 +11,17 @@ class CineController extends Controller
         $cines = Cine::getCine($id);
         $cine_tarifa = Cine::getCineTatifa($id);
         $cine_pelicula = Cine::getCinePelicula($id);
-        return view("cine", ["cines"=>$cines,"cine_tarifa"=>$cine_tarifa,"cine_pelicula"=>$cine_pelicula]);
+        $data = [
+            "cines"=>$cines,
+            "cine_tarifa"=>$cine_tarifa,
+            "cine_pelicula"=>$cine_pelicula
+        ];
+        return view("cine", $data);
     }
     public function cines(){
         
         $cines = Cine::getTodoCines();
         return view("cines",compact("cines"));
     }
+    
 }

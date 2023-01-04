@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+/** Para la proteccion de rutas, usaremos un MiddleWare("can") */
 Route::get('/', [HomeController::class,"index"]);
 
 
