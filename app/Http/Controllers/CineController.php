@@ -14,7 +14,6 @@ class CineController extends Controller
         return view("cine", ["cines"=>$cines,"cine_tarifa"=>$cine_tarifa,"cine_pelicula"=>$cine_pelicula]);
     }
     public function cines(){
-        
         $cines = Cine::getTodoCines();
         return view("cines",compact("cines"));
     }
