@@ -42,7 +42,7 @@
                     </div>
                 </div>
             </div>
-            <img src="{{asset('img/pelicula/'.$pelicula[0]->idPelicula.'.jpg')}}" width="160" height="226"><br><br>
+            <img src="{{asset('public/img/pelicula/'.$pelicula[0]->idPelicula.'.jpg')}}" width="160" height="226"><br><br>
         </div>
         <div class="pelicula-video">
             <!-- <iframe width="580" height="400" src="http://www.youtube.com/v/6maujJFcuxA" frameborder="0" allowfullscreen></iframe> -->

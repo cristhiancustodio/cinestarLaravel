@@ -5,8 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<meta name="description" content="Multicines Cinestar es una empresa pionera en el formato de multicines en el Perú. Información de películas, estrenos, concursos y más">
-		<link rel="shortcut icon" href="{{asset('img/varios/favicon.ico')}}">
-		<link href="{{ asset('css/app.css')}}" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="{{asset('public/img/varios/favicon.ico')}}">
+		<link href="{{ asset('public/css/app.css')}}" rel="stylesheet" type="text/css">
 		<title>@yield("titulo","Main")</title>
 	</head>
 	<body>
@@ -20,12 +20,12 @@
         		<a href="http://www.cinestar.com.pe/contactenos/#contenido_titulo" class="anchorLink">Contáctenos</a>
 			</nav>
 			<div class="area-logo">
-				<a href={{url('/')}}><img src="{{asset('img/varios/logo-cinestar.png')}}"></a>	
+				<a href={{url('/')}}><img src="{{asset('public/img/varios/logo-cinestar.png')}}"></a>	
 			</div>
 			<nav class="menu">
 				<span class="img-social">
-					<a href="http://www.facebook.com/multicinestar" target="_blank"><img src="{{asset('img/varios/ico-face.png')}}"></a>
-					<a href="http://www.twitter.com/multicinestar" target="_blank"><img src="{{asset('img/varios/ico-twitter.png')}}"></a>
+					<a href="http://www.facebook.com/multicinestar" target="_blank"><img src="{{asset('public/img/varios/ico-face.png')}}"></a>
+					<a href="http://www.twitter.com/multicinestar" target="_blank"><img src="{{asset('public/img/varios/ico-twitter.png')}}"></a>
 				</span>
 				<span class="social">Síguenos en: </span>
 				<ul class="menu-principal">
@@ -42,14 +42,14 @@
 
 			</div>
 			<div class="papaya">
-				<a href="http://www.cinepapaya.com/pe/cinestar" target="_blank"><img src="{{asset('img/varios/bg-papaya.jpg')}}"></a>
+				<a href="http://www.cinepapaya.com/pe/cinestar" target="_blank"><img src="{{asset('public/img/varios/bg-papaya.jpg')}}"></a>
 			</div>
 		</header>
 	
 		<div class="contenido">
 			<div class="publicidad">
-				<a href="http://www.cinestar.com.pe/starcard/"><img src="{{asset('img/varios/starcard.jpg')}}"></a>
-				<a href="http://www.cinestar.com.pe/cinefilo_star/"><img src="{{asset('img/varios/cinefilo-star.jpg')}}"></a>
+				<a href="http://www.cinestar.com.pe/starcard/"><img src="{{asset('public/img/varios/starcard.jpg')}}"></a>
+				<a href="http://www.cinestar.com.pe/cinefilo_star/"><img src="{{asset('public/img/varios/cinefilo-star.jpg')}}"></a>
 			</div>
 			
 			@yield('contenido')

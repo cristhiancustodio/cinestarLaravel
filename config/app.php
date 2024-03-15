@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost/CinestarLaravel/public'),
+    'url' => env('APP_URL', 'http://localhost/CinestarLaravel'),
 
     'asset_url' => env('ASSET_URL'),
 

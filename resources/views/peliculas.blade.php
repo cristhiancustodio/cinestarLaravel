@@ -17,16 +17,16 @@
                 <br>
                    <div class="boton-pelicula"> 
                        <a href={{url("pelicula/".$item->idPelicula)}} >
-                           <img src="{{asset('img/varios/btn-mas-info.jpg')}}" width="120" height="30" alt="Ver info">
+                           <img src="{{asset('public/img/varios/btn-mas-info.jpg')}}" width="120" height="30" alt="Ver info">
                        </a>
                    </div>
                    <div class="boton-pelicula"> 
                        <a href="http://www.cinestar.com.pe/popups/trailer/v3fspveODBI" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )" >
-                           <img src="{{asset('img/varios/btn-trailer.jpg')}}" width="120" height="30" alt="Ver trailer">
+                           <img src="{{asset('public/img/varios/btn-trailer.jpg')}}" width="120" height="30" alt="Ver trailer">
                        </a>
                 </div> 
             </div>
-            <img src="{{asset('img/pelicula/'.$item->idPelicula.'.jpg')}}" width="160" height="226"><br><br>
+            <img src="{{asset('public/img/pelicula/'.$item->idPelicula.'.jpg')}}" width="160" height="226"><br><br>
         </div>
         @endforeach
     </div>
