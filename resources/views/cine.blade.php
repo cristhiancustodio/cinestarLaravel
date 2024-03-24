@@ -51,4 +51,13 @@
         </span>
     </div>
 </div>
+
+<!-- FIN -->
 @endsection
+
+
+@section('JS')
+<!-- AQUI IRA TODOS LOS SCRIPTS DE CADA MODULO -->
+<script type="module" src="{{ asset('resources/js/cine.js')}}"></script>
+@endsection
+
