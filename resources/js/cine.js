@@ -2,25 +2,24 @@
 
 import { Practica } from './practica.js';
 
+class Cines{
 
-const Cine = (() => {
-    let numerodos = 0;
 
-    var nuevo = new Practica();
-
-    const nuevaFuncion = function () {
-        console.log(nuevo.metodo());
+    constructor(){
+        this.practica = new Practica();
     }
-    return {
-        miMetodo: function () {
-            nuevo.segunodMetodo();
-            nuevaFuncion();
-        }
 
+    nuevaFuncion(){
+        console.log(this.practica.metodo());
     }
-})();
+
+    miMetodo(){
+        this.practica.segunodMetodo();
+        this.nuevaFuncion();
+    }
+}
 
 
-Cine.miMetodo();
+(new Cines()).miMetodo();
 
 
