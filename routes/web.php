@@ -4,6 +4,7 @@ use App\Http\Controllers\CineController;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PeliculaController;
+use App\Http\Controllers\Prueba;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,4 +29,11 @@ Route::controller(CineController::class)->group(function(){
 Route::controller(PeliculaController::class)->group(function(){
     Route::get("pelicula/{id}","pelicula");
     Route::get("peliculas/{id}","peliculas");
+});
+
+
+Route::prefix("Prueba")->group(function(){
+    Route::get("seleccionar", [Prueba::class, "seleccionar"]);
+    Route::post("insertar", [Prueba::class, "insert"]);
+    Route::put("actualizar", [Prueba::class, "actualizar"]);
 });
