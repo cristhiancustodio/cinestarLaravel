@@ -10,4 +10,10 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    server: {
+        port: 3001, // Cambia esto al puerto que desees
+        hmr: {
+            host: 'localhost',
+        },
+    },
 });

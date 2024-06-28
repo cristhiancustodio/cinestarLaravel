@@ -8,6 +8,7 @@
 		<link rel="shortcut icon" href="{{asset('public/img/varios/favicon.ico')}}">
 		<link href="{{ asset('public/css/app.css')}}" rel="stylesheet" type="text/css">
 		<title>@yield("titulo","Main")</title>
+		@vite(['resources/js/app.js', 'resources/css/app.css'])
 	</head>
 	<body>
 
