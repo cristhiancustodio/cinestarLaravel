@@ -29,9 +29,16 @@ class Prueba extends Controller
         $listado = array_merge($listado, $lista);
         $listado = array_merge($listado, $lista);
         $listado = array_merge($listado, $lista);
+        $listado = array_merge($listado, $lista);
+        $listado = array_merge($listado, $lista);
+        $listado = array_merge($listado, $lista);
+        $listado = array_merge($listado, $lista);
+        $listado = array_merge($listado, $lista);
+        $listado = array_merge($listado, $lista);
+        $listado = array_merge($listado, $lista);
         //dd($listado);
-
-        return view("prueba", compact("listado"));
+        $meses = "pecesto";
+        return view("prueba", compact("listado","meses"));
     }
     public function insert(Request $request){
 

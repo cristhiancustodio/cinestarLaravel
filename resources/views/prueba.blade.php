@@ -9,11 +9,28 @@
     <link rel="stylesheet" href="{{ asset("resources/css/impresion.css") }}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    @vite(['resources/js/app.js', 'resources/css/app.css'])
+    
 </head>
 
 <body>
     <button onclick="window.print()" id="ocultar_imp" >impresion</button>
+
+    <div id="prueba">
+        @{{ finalizado }}
+
+        <button @click="aumentar()" >@{{ aumento }}</button>
+            @{{ numero }}
+        <table>
+            <tr v-for="empresa in lista_empresas">
+                <td>@{{ empresa.Detalle }}</td>
+            </tr>
+        </table>
+
+
+    </div>
+
+    {{ $meses }}
+
     <div class="page-brake">
         <div class="wraper">
             <div class="content">
@@ -82,7 +99,7 @@
 
 </body>
 
-
+@vite(['resources/js/app.js', 'resources/js/prueba.js'])
 <script type="module" src="{{ asset("resources/js/impresion/impresion.js")}}"></script>
 
 </html>

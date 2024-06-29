@@ -77,8 +77,7 @@ class Impresion {
     
     modificarImpresion(){
         let lista_clonar = this.verificarDondeCortar();
-
-        if(lista_clonar != []){
+        if(lista_clonar.length !== 0){
             document.getElementById("div_padre").style.display = '';
             this.crearNuevaHoja();
             this.clonarElementoPrimero("cabecera", ("elementos_nuevos" + this.numero_hoja));            
