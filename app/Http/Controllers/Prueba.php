@@ -11,6 +11,27 @@ class Prueba extends Controller
 
     public function index(){
         
+        $lista = [
+            (object)[
+            "numero1" => "22",
+            "numero2" => "22",
+            "numero3" => "22",
+            "numero4" => "22",
+          ]
+        ];
+        $listado = [];
+        $listado = array_merge($listado, $lista);
+        $listado = array_merge($listado, $lista);
+        $listado = array_merge($listado, $lista);
+        $listado = array_merge($listado, $lista);
+        $listado = array_merge($listado, $lista);
+        $listado = array_merge($listado, $lista);
+        $listado = array_merge($listado, $lista);
+        $listado = array_merge($listado, $lista);
+        $listado = array_merge($listado, $lista);
+        //dd($listado);
+
+        return view("prueba", compact("listado"));
     }
     public function insert(Request $request){
 

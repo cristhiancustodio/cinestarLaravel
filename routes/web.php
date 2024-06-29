@@ -33,6 +33,7 @@ Route::controller(PeliculaController::class)->group(function(){
 
 
 Route::prefix("Prueba")->group(function(){
+    Route::get("/", [Prueba::class, "index"]);
     Route::get("seleccionar", [Prueba::class, "seleccionar"]);
     Route::post("insertar", [Prueba::class, "insert"]);
     Route::put("actualizar", [Prueba::class, "actualizar"]);

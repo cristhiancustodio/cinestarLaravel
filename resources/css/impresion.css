@@ -1,0 +1,33 @@
+*{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: blue; */
+}
+
+.borde{
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+}
+.page-brake{
+    page-break-after: always;
+}
+@media print{
+    .page-brake{
+        page-break-after: always;
+    }
+    #ocultar_imp{
+        display: none;
+    }
+    /*.hoja-vertical{
+        -webkit-transform: rotate(-90deg);
+        -webkit-transform-origin: 0 0;
+        transform: rotate(-90deg);
+        transform-origin: 0 0;
+        position: absolute;
+        top: 100%; Posiciona el contenido después de la rotación 
+        *//*left: 0;
+    }*/
+}
