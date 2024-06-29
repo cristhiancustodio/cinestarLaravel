@@ -21,13 +21,13 @@ table{
     #ocultar_imp{
         display: none;
     }
-    /*.hoja-vertical{
+    /* .hoja-vertical{
         -webkit-transform: rotate(-90deg);
         -webkit-transform-origin: 0 0;
         transform: rotate(-90deg);
         transform-origin: 0 0;
         position: absolute;
-        top: 100%; Posiciona el contenido después de la rotación 
-        *//*left: 0;
-    }*/
+        top: 100%;
+        left: 0;
+    } */
 }

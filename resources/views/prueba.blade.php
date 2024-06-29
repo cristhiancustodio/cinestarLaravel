@@ -37,12 +37,17 @@
                                     <td colspan="3" height="10"></td>
                                 </tr>
                             </table>
+                            <table width="100%" id="cabecera2">
+                                <tr>
+                                    <td class="borde">SEGUNDA CEBECERA</td>
+                                </tr>
+                            </table>
 
                             <table width="100%" id="tabla_principal" >
                                 @foreach ($listado ?? [] as $key => $value)
 
                                     <tr class="tr_principal" id="fila{{ $key }}" >  
-                                        <td class="borde" height="50">{{ $value->numero1 ?? '' }}</td>
+                                        <td class="borde" height="50">{{ $key ?? '' }}</td>
                                         <td class="borde" height="50">{{ $value->numero2 ?? '' }}</td>
                                         <td class="borde" height="50">{{ $value->numero3 ?? '' }}</td>
                                         <td class="borde" height="50">{{ $value->numero4 ?? '' }}</td>
