@@ -1,0 +1,5 @@
+Si necesitamos acomodar vite para que encuentre el manifest.json, es necesario cambiar la ruta publica
+
+quitando el public en el siguiente archivo "vendor\laravel\framework\src\Illuminate\Foundation\Application.php"
+
+en el metodo publicPath()

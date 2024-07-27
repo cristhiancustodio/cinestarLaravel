@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
     build: {
-        outDir: 'public/build',       // Asegura que los archivos de build se coloquen en 'public/build'
+        outDir: 'build', // Asegura que los archivos de build se coloquen en 'build'
     },
     plugins: [
         
@@ -14,7 +14,7 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/js/prueba.js',
             ],
-            publicDirectory: 'public', // Directorio público de Laravel
+            //publicDirectory: 'public', // Directorio público de Laravel
             buildDirectory: 'build',   // Subdirectorio donde se colocarán los archivos de build
 
             refresh: true,

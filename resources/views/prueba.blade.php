@@ -99,7 +99,7 @@
 
 </body>
 
-@vite(['resources/js/app.js', 'resources/js/prueba.js'])
+@vite(['resources/js/prueba.js'])
 <script type="module" src="{{ asset("resources/js/impresion/impresion.js")}}"></script>
 
 </html>
