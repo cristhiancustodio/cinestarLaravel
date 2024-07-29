@@ -74,4 +74,8 @@ class Prueba extends Controller
             "resultado" => $resultado,
         ]);
     }
+
+    public function yasminEstuvoAqui(){
+        
+    }
 }
