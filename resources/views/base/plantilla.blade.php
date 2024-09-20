@@ -14,14 +14,14 @@
 
 		<header>
 			<nav class="nav-sec">
-        		<a href={{url('/')}}>Inicio</a>&nbsp;&nbsp;l&nbsp;&nbsp;
+        		<a href="{{url('/')}}">Inicio</a>&nbsp;&nbsp;l&nbsp;&nbsp;
         		<a href="http://www.cinestar.com.pe/quienes_somos">Quiénes somos</a>&nbsp;&nbsp;l&nbsp;&nbsp;
         		<a href="http://www.cinestar.com.pe/trabaja_con_nosotros">Trabaja con nosotros</a>&nbsp;&nbsp;l&nbsp;&nbsp;
         		<a href="https://www.efact.pe/consult.html" target="_blank">Consulta tu comprobante de pago </a>&nbsp;&nbsp;l&nbsp;&nbsp;
         		<a href="http://www.cinestar.com.pe/contactenos/#contenido_titulo" class="anchorLink">Contáctenos</a>
 			</nav>
 			<div class="area-logo">
-				<a href={{url('/')}}><img src="{{asset('public/img/varios/logo-cinestar.png')}}"></a>	
+				<a href="{{url('/')}}"><img src="{{asset('public/img/varios/logo-cinestar.png')}}"></a>	
 			</div>
 			<nav class="menu">
 				<span class="img-social">
@@ -30,10 +30,10 @@
 				</span>
 				<span class="social">Síguenos en: </span>
 				<ul class="menu-principal">
-		    		<li class="menu-item"><a href={{url('peliculas/1')}} >Cartelera</a></li>
-		       		<li class="menu-item"><a href={{url('peliculas/2')}}>Próximos estrenos</a></li>
+		    		<li class="menu-item"><a href="{{url('peliculas/1')}}">Cartelera</a></li>
+		       		<li class="menu-item"><a href="{{url('peliculas/2')}}">Próximos estrenos</a></li>
 		       		<li class="menu-item"><a href="http://www.cinestar.com.pe/starcard">Star Card</a></li>
-		        	<li class="menu-item"><a href={{url('cines')}}>Nuestros Cines</a></li>
+		        	<li class="menu-item"><a href="{{url('cines')}}">Nuestros Cines</a></li>
 		        	<li class="menu-item"><a href="http://www.cinestar.com.pe/ventas_corporativas">Ventas Corporativas</a></li>
 		        	<li class="menu-item"><a href="http://www.cinestar.com.pe/promociones">Promociones</a></li>
 		        	<li class="menu-item"><a href="http://www.cinestar.com.pe/cinefilo_star">Blog</a></li>
